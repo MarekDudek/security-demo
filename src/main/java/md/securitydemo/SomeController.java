@@ -10,8 +10,9 @@ import java.util.List;
 public class SomeController
 {
 
-    @GetMapping("/")
-    List<String> root() {
+    @GetMapping("/secured")
+    public List<String> root()
+    {
         List<String> list = new ArrayList<>();
         list.add("one");
         list.add("two");
